@@ -20,14 +20,16 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-  function fibonacciNumbers(max) {
-    var fibonacci = [0, 1]
-    for (var i = 2; i < max; i++ ) {
-      fibonacci.push( fibonacci[i - 1] + fibonacci[i - 2] )
+  function fib(n) {
+    let a = 0;  let b = 1; let temp;
+    
+    while (n > 1){
+      temp = b; b +=a; a = temp; n--;
     }
-    return fibonacci
+    return b;
   }
-   console.log(fibonacciNumbers(50));
+  
+  console.log(fib(50));
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
