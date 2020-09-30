@@ -7,9 +7,11 @@ function exercise3() {
   //
   // Edit only the code between the lines (below)
   // -----------------------------------------------------------------
-  for (let number = 2; number < 7; number++) {
+  for (let number = 1; number <= 5; number++) {
     console.log(number);
   }
+
+
   // -----------------------------------------------------------------
   // Edit only the code between the lines (above)
   //
